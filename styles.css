@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    overflow: auto;
+}
+.nav{
+    background: pink;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: auto;
+    width:100%;
+    position: fixed;
+}
+.nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav a:hover{
+    color: #000;
+    background: #ddd;
+}
+.nav a.active{
+    background: #4caf50;
+}
+.main{
+    background-color:rgba(255, 255, 0, 0.692);
+    width:100%;
+    overflow: auto;
+    }
+.infocontainer{
+    margin-top: 7ch;
+    background-color: rgba(255, 0, 0, 0.548);
+    height: 85vh;
+    display: flex;
+    margin-left: 4ch;
+    margin-right: 4ch;
+    justify-content: space-around;
+}
+.devinfo{
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+} 
+.hello{
+font-size: 65px;
+margin-top: 30px;
+}
+.name{
+font-size: 50px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+font-size: 40px;
+}
+.moreabout{
+    font-size: 30px;
+    font-family: serif;
+    margin-top: 23px;
+}
+.buttons{
+margin-top: 34px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 17px;
+}
+.btn:hover{
+    background:white;
+    color: dodgerblue;
+    transition: 0.5s;
+}
+.devpic img{
+    width: 381px;  
+    height: 85vh;
+}
+.About{
+    height:fit-content;
+    font-size: 40px;
+    background: rgba(0, 128, 0, 0.644);
+    margin:8ch 0;
+    margin-left: 4ch;
+    margin-right: 4ch;
+}
+.Skills{
+    height: fit-content;
+    font-size: 40px;
+    background: rgba(238, 130, 238, 0.705);
+    margin:8ch 0;
+    margin-left: 4ch;
+    margin-right: 4ch;
+}
+.Projects{
+    height: fit-content;
+    font-size: 40px;
+    background: rgba(0, 0, 255, 0.863);
+    margin:8ch 0;
+    margin-left: 4ch;
+    margin-right: 4ch;
+}
+.Projects a{
+    color: beige;
+}
+.Contact{
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8ch;
+    background: rgba(255, 166, 0, 0.747);
+    margin-left: 4ch;
+    margin-right: 4ch;
+}
+.Contact Me h1{
+    font-family: 'Source Code Pro', monospace;
+    
+}
+@media screen and (max-width: 700px) {
+    .devpic{
+      display: none;
+    }
+    .infocontainer{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 17ch;
+  }
+    .About{
+        height: fit-content;
+        width: fit-content;
+        margin-left: 2ch;
+        margin-right: 8ch;
+    }
+    .Skills{
+        height: fit-content;
+        width: fit-content;
+        margin-left: 2ch;
+        margin-right: 8ch;
+    }
+    .Projects{
+        height: fit-content;
+        width: fit-content;
+        margin-left: 2ch;
+        margin-right: 8ch;
+    }
+    .Contact{
+        overflow: auto;
+        height: fit-content;
+        width: fit-content;
+        margin-left: 2ch;
+        margin-right: 8ch;
+    }
+}
